@@ -36,5 +36,16 @@ Compile time
 
 
 	
+	n = size of array(n - 1)
+	=B + i * size of datatype	B = Base Address
+					i = index
 
+	B=100, i=2, size of datatype=4
+	=100 + (2 * 4)
+	=100 + 8
+	=108
 
+	The location in the memory is 108
+	 
+	Time taken is 0(1) = Constant time
+	It follow Random access method
