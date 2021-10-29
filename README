@@ -23,7 +23,9 @@ The initialization of the Arrays.
 	-Runtime (While Execution)
 
 
-Compile time 
+	Explanation of Each file
+
+1.Compiletime (File) 
 	int[5] = {3, 4, 5, 1, 0}; -> "Can't exide the size of the array. When exied you will get a compile time error"
 	
 		OR
@@ -49,3 +51,16 @@ Compile time
 	 
 	Time taken is 0(1) = Constant time
 	It follow Random access method
+
+
+
+
+
+2.Operation (File)
+	Operation on Arrays in Data Structure 
+		->Traversal
+		->Insertion
+		->Deletion
+		->Searching
+		->Sorting
+
