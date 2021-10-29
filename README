@@ -1,0 +1,40 @@
+							Data Structure and Algrithms in (C)
+C is the best programming language that gives your the actual memory, It works in the actual memory.
+We will be using Arrays For the data structures and Algorithms.
+
+
+Memory -> This is a long tape of bytes(8 bits).
+Arrays are the fixed size sequenced collection of data items of same data type, The data items are stored in a continuous block or location in the memory.
+
+They are three types of Arrays.
+	-> one (1) Dimesional Arrays 
+	-> two (2) Dimesional Arrays 
+	-> Multidimesional Arrays 
+ 
+Example: int a = 5; 
+	int takes 4byte in the memory 
+	so: | 1b | 2b | 3b | 4b | -> "This are the block of the memory" b means byte.
+	Where by the number of bits are 4 * 8 = 32bits.
+
+	int a[60]; -> This is the declaration of the array
+	
+The initialization of the Arrays.
+	-Compile time (Static initialization)
+	-Runtime (While Execution)
+
+
+Compile time 
+	int[5] = {3, 4, 5, 1, 0}; -> "Can't exide the size of the array. When exied you will get a compile time error"
+	
+		OR
+
+	int[] = {3, 4, 5, 1, 0}; -> "We the size isn't sepcified at compile time the size while be fixed accordine to the number of the data in the cruly braces"
+
+	   0   1   2   3   4  -> This are the index
+	a| 6 | 2 | 3 | 4 | 0 |	-> The data in the array block 
+	0x 100                -> This are the memory address, They are in hexadecimal
+
+
+	
+
+
