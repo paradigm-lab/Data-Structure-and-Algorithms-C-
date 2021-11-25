@@ -16,11 +16,22 @@ int main() {
 			scanf("%d", &a[i]);
 		}
 		
+		printf("\n");
+		for (i = 0; i < size; i++){
+			printf("%d \t", a[i]);
+		}
+		printf("\n");
+		
+
 		printf("From which position you want to delete: ");
 		scanf("%d", &pos);
+		
 		if (pos <= 0 || pos > size) {
+			
 			printf("Invalid position.");
+
 		}
+
 		else {
 			item = a[pos - 1];
 			for (i = pos - 1; i < size - 1; i++) {
@@ -30,36 +41,44 @@ int main() {
 
 			// And the we decreament the array
 			size--;
+			printf("\n");
 			printf("The deleted value is %d \n \n", item);
 			
 			// Printing the updated array after deletion of the value
-			printf("Printing out the updated array. \n");
+			printf("Printing out the updated array: \n");
 			for (i = 0; i < size; i++) {
 				printf("%d \t", a[i]);
 			}
+			printf("\n \n");
 
-
+			
 			// Deleting the value at the last position
-			printf("Deleting the value at last position. \n");
+			printf("Deleting the value at last position. \n \n");
 			item = a[size];
-			printf("The deleted value is %d \n", item);
+			printf("The deleted value is: %d \n \n", item);
 			size--;
 			printf("Printing the updated array: \n");
 			for (i = 0; i < size; i++){
 				printf("%d \t", a[i]);	
 			}
+			printf("\n \n");
 
-
+		
 			// Deleting the value at the first position
+			printf("Deleting the value at the first position. \n \n");
+			item = a[0];
 			for (i = 0; i < size - 1; i++) {
 				a[i] = a[i + 1];
 			}
 			size--;
+			printf("The deleted value is: %d \n", item);
+
 			// Printing the updated array
 			for (i = 0; i < size; i++) {
 				printf("%d \t", a[i]);
 			}
 			printf("\n");
+			
 
 		}
 	}
