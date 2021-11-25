@@ -64,3 +64,16 @@ The initialization of the Arrays.
 		->Searching
 		->Sorting
 
+
+Time complexity in deleting the value:
+--> This depends by which position you are deleting the value
+	Deleting from the first position this is O(n).
+	Deleting from end position is O(1).
+	Generale O(n - p).
+
+But ordering of the array doesn't matter because the array is unsorted.
+
+For the first deleting algorithm is by taking the last value in the array and put the value in the a[pos - 1]. It will take constant time O(1).
+			BUT
+If the array is sorted the order matters, We need to use the shifting process.
+	--> The best algorithm will take O(1) but the condition is that the array should be unsorted.
