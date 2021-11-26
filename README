@@ -77,3 +77,60 @@ For the first deleting algorithm is by taking the last value in the array and pu
 			BUT
 If the array is sorted the order matters, We need to use the shifting process.
 	--> The best algorithm will take O(1) but the condition is that the array should be unsorted.
+
+
+
+
+2D array or 2 Dimenational array:
+The condition of the 2D array is that the column size should given.
+
+Random access is possible in 2D array the time taken is constant time that is O(1).
+If the compile nows the base address and the column size, Then in constant time the compile can compute the memory location of any element.
+
+How the compile is going to compute for the address: 
+	m = No of rows
+	n = No of column
+	B = Base address
+
+Row Major Implementation = B + ( (i * n) + j  ) * size
+
+When the index starts from 1: 2 * 3
+	 = B + (2 - 1) * 3) + (2 - 1) * size
+
+	General Formula: a[i][j] = B + ((i - 1) * n) + (j - 1) * size
+
+Column Major Implementation:
+	a[2][3] to access a[1][2]
+	= B + (((2 * 2) + 1) * 4)
+	
+	General Formula: a[i][j] = B + ( (j * m) + i ) * size
+	
+When the indes starts from 1: 2 * 3
+	= B + ( ((3 - 1) * 2) + 1 ) * size
+
+	General Formula: a[i][j] = B + ( ((j - 1) * m) + i - 1 ) * size
+
+Time taken for all computation is order of one: O(1)
+
+
+Nt: To determine the major implementation your first need to determine if it's row or column major inorder to determine the implementation.
+
+How the data is to be store in 2 dimenational array or implementation of 2-D array in memory.
+1. Row major --> 
+2. Column major
+
+
+As we no that a memory is a long tape of byte and each byte has got it's own address.
+
+Logical Representation in Row major and column major representation.
+	In row major: a[2][3]
+		_________________________________________
+		|1|2|3|4|5|6| | | | | | | | | | | | | | |
+Base address   100
+
+
+	In column major: a[2][3]
+		_________________________________________
+		|1|4|2|5|3|6| | | | | | | | | | | | | | |
+Base address   100
+
